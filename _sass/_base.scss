@@ -1,3 +1,10 @@
+
+@font-face {
+    font-family: 'baobab';
+    src: url('../fonts/RoslindaleDisplayCondensed-Light.otf') format("opentype");
+    font-style: normal;
+    font-weight:normal;
+}
 html,
 body {
     height: 100%;
@@ -71,6 +78,8 @@ aside {
     padding-top: 50px;
 }
 
+.invertedColor{filter: invert(0.5);
+    mix-blend-mode: difference;}
 // Navigation
 
 .navbar-default {
@@ -152,15 +161,23 @@ aside {
 }
 
 // Homepage Header
+.backgroundImage{
+    @include background-cover;
+    background-position: center;
+    background-image: url('../img/header.gif');
+    
+}
+
+
 
 header {
     position: relative;
     width: 100%;
     min-height: auto;
-    @include background-cover;
-    background-position: center;
-    background-image: url('../img/header.jpg');
+    
+    
     text-align: center;
+    
     color: white;
     .header-content {
         position: relative;
@@ -168,18 +185,23 @@ header {
         padding: 100px 15px 100px;
         width: 100%;
         .header-content-inner {
+            
             h1 {
-                font-weight: 700;
-                text-transform: uppercase;
+                color:black;
+                font-family: 'baobab';
+                font-weight: 300;
                 margin-top: 0;
                 margin-bottom: 0;
+               
             }
             hr {
                 margin: 30px auto;
             }
             p {
-                font-weight: 300;
-                color: rgba(white, .7);
+                font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: rgba(rgb(0, 0, 0), .7);
                 font-size: 16px;
                 margin-bottom: 50px;
             }
@@ -353,5 +375,6 @@ img::-moz-selection {
 body {
     -webkit-tap-highlight-color: $theme-dark;
 }
+
 
 

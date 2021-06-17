@@ -416,6 +416,10 @@
 .fa-chevron-right:before {
   content: "\f054";
 }
+
+.fa-vr:before {
+  content: "\f729";
+} 
 .fa-plus-circle:before {
   content: "\f055";
 }
