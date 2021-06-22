@@ -1,4 +1,4 @@
-
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 @font-face {
     font-family: 'baobab';
     src: url('../fonts/RoslindaleDisplayCondensed-Light.otf') format("opentype");
@@ -173,9 +173,6 @@ aside {
 
 
 
-
-
-
 header {
     position: relative;
     
@@ -324,6 +321,30 @@ header {
         margin: 0 auto 20px;
     }
 }
+//animazione Testo
+
+  
+  .waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+    animation: waviy 2s infinite;
+    animation-delay: calc(.1s * var(--i))
+  }
+  @keyframes waviy {
+    0%,40%,100% {
+      transform: translateY(0)
+    }
+    20% {
+      transform: translateY(-20px)
+    }
+  }
 
 // Bootstrap Overrides
 .text-primary {
