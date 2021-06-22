@@ -9,3 +9,14 @@ anime.timeline({loop: false})
     duration: 1400,
     delay: (el, i) => 30 * i
   });
+  var textWrapper = document.querySelector('.ml17');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml17 .letter',
+    translateY: [-100,0],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: (el, i) => 30 * i
+  });
