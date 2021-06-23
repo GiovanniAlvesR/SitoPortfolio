@@ -162,13 +162,10 @@ aside {
 
 // Homepage Header
 
-.backgroundVideo{
-  object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;           
+.backgroundImg{
+    background-image: url("../img/bg.gif");     
+    background-position: center; 
+
 }
 
 
