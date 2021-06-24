@@ -1,7 +1,7 @@
 <header >
     
     <div class="containerBg "> 
-        <video autoplay loop muted playsinline class="video">
+        <video loop muted playsinline class="video" id="v0">
 
         <source src="https://giovannialvesr.github.io/SitoPortofolio/img/bg.webm" type="video/webm">
         <source src="https://giovannialvesr.github.io/SitoPortofolio/img/bg.mp4" onerror="fallback(parentNode)">
@@ -9,6 +9,18 @@
         
       Your browser does not support the video tag.
       </video> </div>
+      <script>var vid = document.getElementById('v0');
+        //var vid = $('#v0')[0]; // jquery option
+        
+        // pause video on load
+        vid.play();
+        
+        // pause video on document scroll (stops autoplay once scroll started)
+        window.onscroll = function(){
+            vid.play();
+        };
+        
+        </script>
     <div class="noise"></div>
 
     <div class="header-content invertedColor">
