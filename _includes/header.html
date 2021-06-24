@@ -9,17 +9,12 @@
         
       Your browser does not support the video tag.
       </video> </div>
-      <script>var vid = document.getElementById('v0');
-        //var vid = $('#v0')[0]; // jquery option
-        
-        // pause video on load
-        vid.pause();
-        
-        // pause video on document scroll (stops autoplay once scroll started)
-        window.onscroll = function(){
+      <script>function metodo(){
+      var vid = document.getElementById('v0');
+        {
             vid.play();
         };
-        
+    }
         </script>
     <div class="noise"></div>
 
@@ -45,5 +40,6 @@
                    <i class="fa fa-4x fa-chevron-down text-primary" data-wow-delay=".1s"></i>
             </a>
         </div>
+        <button onclick="metodo()">premi</button>
     </div>
 </header>
